@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=9FEF00&height=140&section=header&text=Mathyou&fontColor=0d1117&fontSize=48&fontAlignY=38" width="100%" alt="" />
+
 <div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=9FEF00&center=true&vCenter=true&width=520&lines=vibe+coder;sys+%26+network+tinkerer;homelab+%E2%80%A2+domotique+%E2%80%A2+embarqu%C3%A9" alt="Typing SVG" />
@@ -55,3 +57,5 @@ Surtout du **vibe coding** : des idées qui partent d'un besoin perso et finisse
 [![Mail](https://img.shields.io/badge/mail-andremathyoupro%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:andremathyoupro@gmail.com)
 
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=9FEF00&height=100&section=footer" width="100%" alt="" />
