@@ -29,6 +29,7 @@ Surtout du **vibe coding** : des idées qui partent d'un besoin perso et finisse
   <img src="https://img.shields.io/badge/Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white" />
   <img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" />
   <img src="https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=claude&logoColor=white" />
 </p>
 
 ### Hack The Box
@@ -36,6 +37,14 @@ Surtout du **vibe coding** : des idées qui partent d'un besoin perso et finisse
 <a href="https://app.hackthebox.com/users/1959749">
   <img src="https://www.hackthebox.com/badge/image/1959749" alt="Hack The Box" />
 </a>
+
+<br /><br />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mathyouadr/mathyouadr/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mathyouadr/mathyouadr/output/github-snake.svg" />
+  <img alt="snake qui mange le graphe de contributions" src="https://raw.githubusercontent.com/mathyouadr/mathyouadr/output/github-snake.svg" />
+</picture>
 
 ---
 
