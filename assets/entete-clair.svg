@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" role="img" aria-label="Mathyou ANDRE, technicien systèmes et réseaux">
+<style>
+  .cable-gaine { stroke-dasharray: 1; stroke-dashoffset: 1; animation: trace .9s calc(.5s + var(--i) * .15s) cubic-bezier(.6,0,.2,1) forwards; }
+  .cable-rayure, .paquet { opacity: 0; animation: apparait .3s calc(1.4s + var(--i) * .15s) forwards; }
+  .led { animation: clignote 1.4s steps(2, jump-none) infinite; }
+  .statut-onde { transform-box: fill-box; transform-origin: center; animation: onde 2s ease-out infinite; }
+  @keyframes trace { to { stroke-dashoffset: 0; } }
+  @keyframes apparait { to { opacity: 1; } }
+  @keyframes clignote { 50% { opacity: .25; } }
+  @keyframes onde { from { transform: scale(1); opacity: .6; } to { transform: scale(3); opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) {
+    .cable-gaine { stroke-dashoffset: 0; animation: none; }
+    .cable-rayure { opacity: 1; animation: none; }
+    .paquet { display: none; }
+    .led, .statut-onde { animation: none; }
+  }
+</style>
+<defs>
+  <pattern id="trame" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V32" fill="none" stroke="rgb(20 23 26 / 0.07)" stroke-width="1"/>
+  </pattern>
+  <path id="cable-0" d="M632 196 C 720 196, 700 58, 784 58"/>
+  <path id="cable-1" d="M632 218 C 720 218, 700 174, 784 174"/>
+  <path id="cable-2" d="M632 240 C 720 240, 700 290, 784 290"/>
+  <path id="cable-3" d="M632 262 C 720 262, 700 406, 784 406"/>
+</defs>
+<rect width="1000" height="480" rx="20" fill="#edefec"/>
+<rect width="1000" height="480" rx="20" fill="url(#trame)"/>
+
+<g transform="translate(48 0)">
+  <rect x="0" y="92" width="268" height="32" rx="16" fill="#fafbf9" stroke="#d4d8d3"/>
+  <circle cx="20" cy="108" r="4.5" fill="#1f7a4a" class="statut-onde"/>
+  <circle cx="20" cy="108" r="4.5" fill="#1f7a4a"/>
+  <text x="34" y="113" font-family="'Bricolage Grotesque','Segoe UI',system-ui,-apple-system,sans-serif" font-size="14" font-weight="500" fill="#363c42">À la recherche d'une alternance</text>
+
+  <text font-family="'Bricolage Grotesque','Segoe UI',system-ui,-apple-system,sans-serif" font-weight="800" font-size="84" letter-spacing="-2.5" fill="#14171a">
+    <tspan x="-4" y="212">Mathyou</tspan><tspan x="-4" y="288">ANDRE</tspan>
+  </text>
+  <text x="0" y="338" font-family="'Bricolage Grotesque','Segoe UI',system-ui,-apple-system,sans-serif" font-size="24" font-weight="600" fill="#14171a">Technicien systèmes &amp; réseaux</text>
+  <text x="0" y="366" font-family="'JetBrains Mono',ui-monospace,'Cascadia Code',Consolas,monospace" font-size="15" fill="#2450d8">Étudiant en BTS SIO option SISR</text>
+  <text x="0" y="404" font-family="'JetBrains Mono',ui-monospace,'Cascadia Code',Consolas,monospace" font-size="13" fill="#555d65">Saint-Étienne · mathyouandre.fr</text>
+</g>
+
+<g>
+  <rect x="424" y="168" width="208" height="112" rx="14" fill="#fafbf9" stroke="#b6bcb6" stroke-width="1.5"/>
+  <text x="444" y="200" font-family="'JetBrains Mono',ui-monospace,'Cascadia Code',Consolas,monospace" font-size="15" font-weight="600" fill="#555d65">SW-01</text>
+  <circle cx="444" cy="252" r="4" fill="#1f7a4a" class="led"/>
+  <circle cx="458" cy="252" r="4" fill="#1f7a4a" class="led" style="animation-duration:.9s"/>
+  <circle cx="472" cy="252" r="4" fill="#dd5f17" class="led" style="animation-duration:2.1s"/>
+  <rect x="612" y="189" width="20" height="14" rx="3" fill="#f1f3f0" stroke="#b6bcb6"/>
+  <rect x="612" y="211" width="20" height="14" rx="3" fill="#f1f3f0" stroke="#b6bcb6"/>
+  <rect x="612" y="233" width="20" height="14" rx="3" fill="#f1f3f0" stroke="#b6bcb6"/>
+  <rect x="612" y="255" width="20" height="14" rx="3" fill="#f1f3f0" stroke="#b6bcb6"/>
+</g>
+
+<g style="--i:0">
+  <path d="M632 196 C 720 196, 700 58, 784 58" pathLength="1" class="cable-gaine" fill="none" stroke="#dd5f17" stroke-width="7" stroke-linecap="round"/>
+  <path d="M632 196 C 720 196, 700 58, 784 58" class="cable-rayure" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2.5" stroke-dasharray="6 9"/>
+  <circle r="5" class="paquet" fill="#fafbf9" stroke="#dd5f17" stroke-width="3">
+    <animateMotion dur="2.40s" begin="1.6s" repeatCount="indefinite"><mpath href="#cable-0"/></animateMotion>
+  </circle>
+</g>
+<g>
+  <rect x="784" y="28" width="198" height="60" rx="12" fill="#fafbf9" stroke="#d4d8d3" stroke-width="1.5"/>
+  <rect x="784" y="28" width="6" height="60" rx="3" fill="#dd5f17"/>
+  <text x="802" y="54" font-family="'Bricolage Grotesque','Segoe UI',system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#14171a">Systèmes</text>
+  <text x="802" y="74" font-family="'JetBrains Mono',ui-monospace,'Cascadia Code',Consolas,monospace" font-size="11.5" fill="#555d65">Windows Server, Linux</text>
+</g>
+<g style="--i:1">
+  <path d="M632 218 C 720 218, 700 174, 784 174" pathLength="1" class="cable-gaine" fill="none" stroke="#1f8f55" stroke-width="7" stroke-linecap="round"/>
+  <path d="M632 218 C 720 218, 700 174, 784 174" class="cable-rayure" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2.5" stroke-dasharray="6 9"/>
+  <circle r="5" class="paquet" fill="#fafbf9" stroke="#1f8f55" stroke-width="3">
+    <animateMotion dur="2.75s" begin="1.9s" repeatCount="indefinite"><mpath href="#cable-1"/></animateMotion>
+  </circle>
+</g>
+<g>
+  <rect x="784" y="144" width="198" height="60" rx="12" fill="#fafbf9" stroke="#d4d8d3" stroke-width="1.5"/>
+  <rect x="784" y="144" width="6" height="60" rx="3" fill="#1f8f55"/>
+  <text x="802" y="170" font-family="'Bricolage Grotesque','Segoe UI',system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#14171a">Réseaux</text>
+  <text x="802" y="190" font-family="'JetBrains Mono',ui-monospace,'Cascadia Code',Consolas,monospace" font-size="11.5" fill="#555d65">Switchs, brassage, DHCP</text>
+</g>
+<g style="--i:2">
+  <path d="M632 240 C 720 240, 700 290, 784 290" pathLength="1" class="cable-gaine" fill="none" stroke="#2450d8" stroke-width="7" stroke-linecap="round"/>
+  <path d="M632 240 C 720 240, 700 290, 784 290" class="cable-rayure" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2.5" stroke-dasharray="6 9"/>
+  <circle r="5" class="paquet" fill="#fafbf9" stroke="#2450d8" stroke-width="3">
+    <animateMotion dur="3.10s" begin="2.2s" repeatCount="indefinite"><mpath href="#cable-2"/></animateMotion>
+  </circle>
+</g>
+<g>
+  <rect x="784" y="260" width="198" height="60" rx="12" fill="#fafbf9" stroke="#d4d8d3" stroke-width="1.5"/>
+  <rect x="784" y="260" width="6" height="60" rx="3" fill="#2450d8"/>
+  <text x="802" y="286" font-family="'Bricolage Grotesque','Segoe UI',system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#14171a">Électronique</text>
+  <text x="802" y="306" font-family="'JetBrains Mono',ui-monospace,'Cascadia Code',Consolas,monospace" font-size="11.5" fill="#555d65">ESP32, RP2040</text>
+</g>
+<g style="--i:3">
+  <path d="M632 262 C 720 262, 700 406, 784 406" pathLength="1" class="cable-gaine" fill="none" stroke="#8b5a36" stroke-width="7" stroke-linecap="round"/>
+  <path d="M632 262 C 720 262, 700 406, 784 406" class="cable-rayure" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2.5" stroke-dasharray="6 9"/>
+  <circle r="5" class="paquet" fill="#fafbf9" stroke="#8b5a36" stroke-width="3">
+    <animateMotion dur="3.45s" begin="2.5s" repeatCount="indefinite"><mpath href="#cable-3"/></animateMotion>
+  </circle>
+</g>
+<g>
+  <rect x="784" y="376" width="198" height="60" rx="12" fill="#fafbf9" stroke="#d4d8d3" stroke-width="1.5"/>
+  <rect x="784" y="376" width="6" height="60" rx="3" fill="#8b5a36"/>
+  <text x="802" y="402" font-family="'Bricolage Grotesque','Segoe UI',system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#14171a">Hack The Box</text>
+  <text x="802" y="422" font-family="'JetBrains Mono',ui-monospace,'Cascadia Code',Consolas,monospace" font-size="11.5" fill="#555d65">34 machines</text>
+</g>
+</svg>
