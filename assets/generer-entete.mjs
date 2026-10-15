@@ -43,16 +43,14 @@ const entete = (t) => {
   .cable-gaine { stroke-dasharray: 1; stroke-dashoffset: 1; animation: trace .9s calc(.5s + var(--i) * .15s) cubic-bezier(.6,0,.2,1) forwards; }
   .cable-rayure, .paquet { opacity: 0; animation: apparait .3s calc(1.4s + var(--i) * .15s) forwards; }
   .led { animation: clignote 1.4s steps(2, jump-none) infinite; }
-  .statut-onde { transform-box: fill-box; transform-origin: center; animation: onde 2s ease-out infinite; }
   @keyframes trace { to { stroke-dashoffset: 0; } }
   @keyframes apparait { to { opacity: 1; } }
   @keyframes clignote { 50% { opacity: .25; } }
-  @keyframes onde { from { transform: scale(1); opacity: .6; } to { transform: scale(3); opacity: 0; } }
   @media (prefers-reduced-motion: reduce) {
     .cable-gaine { stroke-dashoffset: 0; animation: none; }
     .cable-rayure { opacity: 1; animation: none; }
     .paquet { display: none; }
-    .led, .statut-onde { animation: none; }
+    .led { animation: none; }
   }
 </style>
 <defs>
@@ -64,12 +62,7 @@ const entete = (t) => {
 <rect width="1000" height="480" rx="20" fill="${t.bg}"/>
 <rect width="1000" height="480" rx="20" fill="url(#trame)"/>
 
-<g transform="translate(48 0)">
-  <rect x="0" y="92" width="268" height="32" rx="16" fill="${t.surface}" stroke="${t.border}"/>
-  <circle cx="20" cy="108" r="4.5" fill="${t.ok}" class="statut-onde"/>
-  <circle cx="20" cy="108" r="4.5" fill="${t.ok}"/>
-  <text x="34" y="113" font-family="${SANS}" font-size="14" font-weight="500" fill="${t.soft}">À la recherche d'une alternance</text>
-
+<g transform="translate(48 -30)">
   <text font-family="${SANS}" font-weight="800" font-size="84" letter-spacing="-2.5" fill="${t.text}">
     <tspan x="-4" y="212">Mathyou</tspan><tspan x="-4" y="288">ANDRE</tspan>
   </text>

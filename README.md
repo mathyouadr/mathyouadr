@@ -2,11 +2,11 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/entete-sombre.svg" />
     <source media="(prefers-color-scheme: light)" srcset="assets/entete-clair.svg" />
-    <img alt="Mathyou ANDRE — Technicien systèmes & réseaux, étudiant en BTS SIO option SISR, à la recherche d'une alternance" src="assets/entete-clair.svg" width="100%" />
+    <img alt="Mathyou ANDRE — Technicien systèmes & réseaux, étudiant en BTS SIO option SISR" src="assets/entete-clair.svg" width="100%" />
   </picture>
 </a>
 
-Entre systèmes, réseaux et informatique, je développe mes compétences au quotidien à travers ma formation et mes projets personnels. Bac Pro CIEL mention Très Bien, aujourd'hui en **BTS SIO option SISR** à Saint-Étienne, et **à la recherche d'une alternance**.
+Entre systèmes, réseaux et informatique, je développe mes compétences au quotidien à travers ma formation et mes projets personnels. Bac Pro CIEL mention Très Bien, aujourd'hui en **BTS SIO option SISR** à Saint-Étienne.
 
 ```console
 mathh@SW-01# show interfaces status
