@@ -14,23 +14,17 @@ Port    Nom             Statut      Détail
 Gi0/1   systemes        connected   Windows Server, Linux, Active Directory
 Gi0/2   reseaux         connected   switchs, brassage RJ45, DHCP
 Gi0/3   electronique    connected   ESP32, Raspberry Pi Pico, Arduino
-Gi0/4   hack-the-box    connected   34 machines, rang Hacker
+Gi0/4   hack-the-box    connected   rang Hacker
+Gi0/5   homelab        connected   Proxmox, Home Assistant, WireGuard, Pi-hole
 ```
 
-### Projets
+### En ce moment
 
-Des besoins perso qui finissent en objets connectés, en domotique ou en petits outils.
+- 🎓 BTS SIO SISR en alternance (2026-2028)
+- 🖥️ Un homelab sous Proxmox : virtualisation, supervision, domotique, VPN
+- 🔐 Entraînement régulier sur Hack The Box
 
-| Projet | En bref |
-| --- | --- |
-| [**CYD-Buttons-HA**](https://github.com/mathyouadr/CYD-Buttons-HA) | Télécommande tactile pour Home Assistant sur écran ESP32 Cheap Yellow Display (ESPHome, LVGL). |
-| [**CYD MQTT Display**](https://github.com/mathyouadr/cyd-mqtt-display) | Écran ESP32 piloté par MQTT (TLS) depuis Discord ou un PC : texte, image, buzzer. |
-| [**Prototype Pointeuse RFID**](https://github.com/mathyouadr/Prototype-Pointeuse) | Pointeuse et suivi d'outillage par badge sur ESP32 + RC522, autonome : WiFi, interface web, annonces vocales. |
-| [**MacroPad**](https://github.com/mathyouadr/MacroPad) | Pavé de 9 touches sur Raspberry Pi Pico (CircuitPython), avec configurateur PC, PCB et boîtier 3D. |
-| [**Lecteur PDF à voix haute**](https://github.com/mathyouadr/lecteur-pdf) | Application web auto-hébergée qui lit des livres PDF phrase par phrase, avec reprise de lecture. |
-| [**Puff connecté**](https://github.com/mathyouadr/puff-connecte) | Une puff rechargeable transformée en interrupteur Home Assistant par un ESP32. |
-
-Chaque projet a sa page détaillée sur [mathyouandre.fr/projets](https://mathyouandre.fr/projets/).
+Mes réalisations (domotique, ESP32, outils) sont détaillées sur [mathyouandre.fr/projets](https://mathyouandre.fr/projets/).
 
 ### Outils
 
