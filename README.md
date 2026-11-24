@@ -15,7 +15,7 @@ Gi0/1   systemes        connected   Windows Server, Linux, Active Directory
 Gi0/2   reseaux         connected   switchs, brassage RJ45, DHCP
 Gi0/3   electronique    connected   ESP32, Raspberry Pi Pico, Arduino
 Gi0/4   hack-the-box    connected   rang Hacker
-Gi0/5   homelab        connected   Proxmox, Home Assistant, WireGuard, Pi-hole
+Gi0/5   homelab        connected   Proxmox, Home Assistant
 ```
 
 ### En ce moment
